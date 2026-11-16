@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services – Interactive English | A1–A2</title>
+<style>
+:root{--ink:#21324a;--muted:#64748b;--blue:#2563eb;--teal:#0f9f8f;--paper:#fff;--bg:#f3f7ff;--pink:#fff0f4;--yellow:#fff8df;--green:#e8fbf3;--red:#fff0ed;--line:#dce6f3}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#f4f8ff,#f1fff9);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.55}.wrap{max-width:980px;margin:auto;padding:22px 16px 48px}.hero{padding:28px;border-radius:24px;background:linear-gradient(120deg,#dbeafe,#d9fbf2);box-shadow:0 8px 24px #28466b14}.tag{display:inline-block;border-radius:99px;padding:4px 12px;background:#fff;color:#176b8b;font-weight:700;font-size:.85rem}h1{font-size:clamp(2rem,5vw,3rem);margin:10px 0 4px}h2{font-size:1.35rem;margin:0 0 14px}.hero p{margin:5px 0}.section{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:20px;box-shadow:0 5px 16px #28466b0b}.section-head{display:flex;gap:12px;align-items:center;margin-bottom:12px}.num{display:grid;place-items:center;min-width:38px;height:38px;border-radius:13px;background:#e9f1ff;color:var(--blue);font-weight:800}.vocab{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.word{background:#f8fbff;border:1px solid var(--line);padding:13px;border-radius:14px}.word strong{display:block;font-size:1.05rem}.word span{color:var(--muted)}.word button{margin-top:7px;background:#eaf7ff;color:#14577e;padding:6px 10px;font-size:.85rem}.question{padding:14px 0;border-top:1px solid #edf1f7}.question:first-child{border-top:0}.qtitle{font-weight:700;margin:0 0 8px}.options{display:flex;flex-wrap:wrap;gap:8px}.options label{border:1px solid var(--line);padding:8px 11px;border-radius:12px;background:#fbfdff;cursor:pointer}.options label:has(input:checked){border-color:#75a7ff;background:#edf4ff}.options input{accent-color:var(--blue);margin-right:5px}.fillrow{display:flex;flex-wrap:wrap;gap:7px;align-items:center}.fillrow input{max-width:180px;padding:8px 10px}.correct{background:var(--green)!important;border-color:#41b883!important}.incorrect{background:var(--red)!important;border-color:#f18c7e!important}.feedback{font-size:.9rem;font-weight:700;margin-top:5px}.good{color:#087a53}.bad{color:#bc3b34}input[type=text]{border:1px solid #b9c9da;border-radius:9px;font-size:1rem}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.actions button,button{border:0;border-radius:12px;padding:12px 18px;font-size:1rem;font-weight:700;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#e8eef7;color:#30445e}.result{display:none;margin-top:18px;padding:18px;border-radius:16px;background:#eff8ff;border:1px solid #b8d5f5}.result h2{margin-bottom:5px}.answerkey{display:none;margin-top:12px;padding:14px;border-radius:12px;background:#fff}.small{font-size:.92rem;color:var(--muted)}.dialogue{background:#fff9e9;padding:14px;border-radius:14px;margin:8px 0}.dialogue p{margin:4px 0}.footer{text-align:center;color:var(--muted);font-size:.9rem;padding:20px}.hidden{display:none}
+@media(max-width:560px){.hero,.section{padding:18px}.wrap{padding:14px 12px 32px}.options{display:grid}.options label{width:100%}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+<span class="tag">ENGLISH • A1–A2</span>
+<h1>Services</h1>
+<p><strong>Szolgáltatások – szókincs és hétköznapi helyzetek</strong></p>
+<p>Tanuld meg a fontos szavakat, majd gyakorolj rövid, hétköznapi párbeszédekkel. A végén ellenőrizd a válaszaidat!</p>
+</header>
+<section class="section">
+<div class="section-head"><span class="num">1</span><div><h2>Learn the words | Tanuld meg a szavakat</h2><div class="small">Kattints a hangszóróra a szó kiejtéséhez! (Ha az eszközöd támogatja.)</div></div></div>
+<div class="vocab">
+<div class="word"><strong>the post office</strong><span>posta</span><button onclick="say('the post office')">🔊 Listen</button></div>
+<div class="word"><strong>the bank</strong><span>bank</span><button onclick="say('the bank')">🔊 Listen</button></div>
+<div class="word"><strong>the pharmacy</strong><span>gyógyszertár</span><button onclick="say('the pharmacy')">🔊 Listen</button></div>
+<div class="word"><strong>the library</strong><span>könyvtár</span><button onclick="say('the library')">🔊 Listen</button></div>
+<div class="word"><strong>the hairdresser’s</strong><span>fodrászat</span><button onclick="say('the hairdresser’s')">🔊 Listen</button></div>
+<div class="word"><strong>the bus station</strong><span>buszpályaudvar</span><button onclick="say('the bus station')">🔊 Listen</button></div>
+<div class="word"><strong>the supermarket</strong><span>szupermarket</span><button onclick="say('the supermarket')">🔊 Listen</button></div>
+<div class="word"><strong>the café</strong><span>kávézó</span><button onclick="say('the café')">🔊 Listen</button></div>
+<div class="word"><strong>send a letter</strong><span>levelet feladni</span><button onclick="say('send a letter')">🔊 Listen</button></div>
+<div class="word"><strong>take out money</strong><span>pénzt felvenni</span><button onclick="say('take out money')">🔊 Listen</button></div>
+<div class="word"><strong>buy medicine</strong><span>gyógyszert venni</span><button onclick="say('buy medicine')">🔊 Listen</button></div>
+<div class="word"><strong>borrow a book</strong><span>könyvet kölcsönözni</span><button onclick="say('borrow a book')">🔊 Listen</button></div>
+</div></section>
+<section class="section" id="task1">
+<div class="section-head"><span class="num">2</span><div><h2>Where do you go? | Hová mész?</h2><div class="small">Válaszd ki a megfelelő helyet!</div></div></div>
+<div class="question" data-answer="pharmacy"><p class="qtitle">1. You want to buy medicine.</p><div class="options"><label><input type="radio" name="q1" value="bank">the bank</label><label><input type="radio" name="q1" value="pharmacy">the pharmacy</label><label><input type="radio" name="q1" value="library">the library</label></div></div>
+<div class="question" data-answer="post office"><p class="qtitle">2. You want to send a letter.</p><div class="options"><label><input type="radio" name="q2" value="cafe">the café</label><label><input type="radio" name="q2" value="post office">the post office</label><label><input type="radio" name="q2" value="bus station">the bus station</label></div></div>
+<div class="question" data-answer="library"><p class="qtitle">3. You want to borrow a book.</p><div class="options"><label><input type="radio" name="q3" value="library">the library</label><label><input type="radio" name="q3" value="supermarket">the supermarket</label><label><input type="radio" name="q3" value="hairdresser">the hairdresser’s</label></div></div>
+<div class="question" data-answer="bank"><p class="qtitle">4. You want to take out money.</p><div class="options"><label><input type="radio" name="q4" value="bank">the bank</label><label><input type="radio" name="q4" value="pharmacy">the pharmacy</label><label><input type="radio" name="q4" value="cafe">the café</label></div></div>
+</section>
+<section class="section" id="task2">
+<div class="section-head"><span class="num">3</span><div><h2>Choose the reply | Válaszd ki a választ!</h2><div class="small">Olvasd el a helyzetet, és válaszd ki, mit mondanál!</div></div></div>
+<div class="dialogue"><p><strong>At the hairdresser’s</strong></p><p>Customer: Hello. Can I have a haircut, please?</p><p>Hairdresser: __________</p></div>
+<div class="question" data-answer="Of course. Please sit down."><div class="options"><label><input type="radio" name="q5" value="Of course. Please sit down.">Of course. Please sit down.</label><label><input type="radio" name="q5" value="Two stamps, please.">Two stamps, please.</label><label><input type="radio" name="q5" value="Here is your library card.">Here is your library card.</label></div></div>
+<div class="dialogue"><p><strong>At the post office</strong></p><p>Customer: How much is this stamp?</p><p>Assistant: __________</p></div>
+<div class="question" data-answer="It’s one euro."><div class="options"><label><input type="radio" name="q6" value="It’s one euro.">It’s one euro.</label><label><input type="radio" name="q6" value="I’d like a haircut.">I’d like a haircut.</label><label><input type="radio" name="q6" value="The bus leaves at ten.">The bus leaves at ten.</label></div></div>
+<div class="dialogue"><p><strong>At the café</strong></p><p>Customer: Can I have a tea, please?</p><p>Waiter: __________</p></div>
+<div class="question" data-answer="Yes, of course."><div class="options"><label><input type="radio" name="q7" value="Yes, of course.">Yes, of course.</label><label><input type="radio" name="q7" value="It’s next to the bank.">It’s next to the bank.</label><label><input type="radio" name="q7" value="I need a book.">I need a book.</label></div></div>
+</section>
+<section class="section" id="task3">
+<div class="section-head"><span class="num">4</span><div><h2>Complete the sentences | Egészítsd ki a mondatokat!</h2><div class="small">Írd be a hiányzó szót! A nagybetű és a kisbetű nem számít.</div></div></div>
+<div class="question" data-answer="library"><p class="qtitle">1. I want to borrow a book. I’m going to the <span class="fillrow"><input type="text" aria-label="Sentence 1">.</span></p></div>
+<div class="question" data-answer="pharmacy"><p class="qtitle">2. I have a headache. I need to go to the <span class="fillrow"><input type="text" aria-label="Sentence 2">.</span></p></div>
+<div class="question" data-answer="bank"><p class="qtitle">3. I need some money. I’m going to the <span class="fillrow"><input type="text" aria-label="Sentence 3">.</span></p></div>
+<div class="question" data-answer="post office"><p class="qtitle">4. I want to send a parcel. I’m going to the <span class="fillrow"><input type="text" aria-label="Sentence 4">.</span></p></div>
+</section>
+<section class="section" id="model-dialogues">
+<div class="section-head"><span class="num">5</span><div><h2>Model dialogues | Mintapárbeszédek</h2><div class="small">Olvasd el a két hosszabb párbeszédet! A magyar segítség után próbáld meg újra elolvasni az angol szöveget.</div></div></div>
+<div class="dialogue"><p><strong>At the hairdresser’s | A fodrásznál</strong></p>
+<p><b>Hairdresser:</b> Good morning. Have you got an appointment? <span class="small">(Jó reggelt! Van időpontja?)</span></p>
+<p><b>Customer:</b> Yes, I have an appointment at ten o’clock. <span class="small">(Igen, tíz órára van időpontom.)</span></p>
+<p><b>Hairdresser:</b> Great. Please sit down. What would you like today? <span class="small">(Remek. Kérem, foglaljon helyet. Mit szeretne ma?)</span></p>
+<p><b>Customer:</b> I’d like a haircut, please. My hair is too long. <span class="small">(Szeretnék egy hajvágást. Túl hosszú a hajam.)</span></p>
+<p><b>Hairdresser:</b> Would you like it short or just a little shorter? <span class="small">(Rövidet szeretne, vagy csak egy kicsit rövidebbet?)</span></p>
+<p><b>Customer:</b> Just a little shorter, please. And please keep it longer at the front. <span class="small">(Csak egy kicsit legyen rövidebb. Elöl kérem, maradjon hosszabb.)</span></p>
+<p><b>Hairdresser:</b> Of course. Would you like me to wash your hair first? <span class="small">(Természetesen. Szeretné, hogy először megmossam a haját?)</span></p>
+<p><b>Customer:</b> Yes, please. Do you have a shampoo for dry hair? <span class="small">(Igen, kérem. Van száraz hajra való samponjuk?)</span></p>
+<p><b>Hairdresser:</b> Yes, we do. I’ll use that one. Is the water temperature comfortable? <span class="small">(Igen, van. Azt fogom használni. Megfelelő a víz hőmérséklete?)</span></p>
+<p><b>Customer:</b> Yes, thank you. <span class="small">(Igen, köszönöm.)</span></p>
+<p><b>Hairdresser:</b> Your hair is ready. Is this length all right? <span class="small">(Elkészült a haja. Megfelel ez a hossz?)</span></p>
+<p><b>Customer:</b> Yes, that’s perfect. Could you dry it, please? <span class="small">(Igen, tökéletes. Meg tudná szárítani?)</span></p>
+<p><b>Hairdresser:</b> Certainly. Would you like it straight or curly? <span class="small">(Természetesen. Egyenes vagy göndör legyen?)</span></p>
+<p><b>Customer:</b> Straight, please. How much is the haircut and wash? <span class="small">(Egyenes legyen, kérem. Mennyibe kerül a hajvágás és a hajmosás?)</span></p>
+<p><b>Hairdresser:</b> It’s twelve euros altogether. You can pay at the desk. <span class="small">(Összesen tizenkét euró. A pultnál tud fizetni.)</span></p>
+<p><b>Customer:</b> Thank you. It looks very nice! <span class="small">(Köszönöm. Nagyon jól néz ki!)</span></p></div>
+<div class="dialogue"><p><strong>Opening a bank account | Bankszámlanyitás a bankban</strong></p>
+<p><b>Bank assistant:</b> Good morning. How can I help you? <span class="small">(Jó reggelt! Miben segíthetek?)</span></p>
+<p><b>Customer:</b> Good morning. I’d like to open a bank account, please. <span class="small">(Jó reggelt! Szeretnék bankszámlát nyitni.)</span></p>
+<p><b>Bank assistant:</b> Of course. Do you have an account with our bank already? <span class="small">(Természetesen. Van már számlája a bankunknál?)</span></p>
+<p><b>Customer:</b> No, I don’t. This will be my first account here. <span class="small">(Nincs. Ez lesz az első számlám itt.)</span></p>
+<p><b>Bank assistant:</b> No problem. Can I see your ID card, please? <span class="small">(Semmi gond. Megnézhetem a személyi igazolványát?)</span></p>
+<p><b>Customer:</b> Yes, here you are. Do you need my address, too? <span class="small">(Igen, tessék. A lakcímemre is szüksége van?)</span></p>
+<p><b>Bank assistant:</b> Yes, please. What is your home address? <span class="small">(Igen, kérem. Mi az otthoni címe?)</span></p>
+<p><b>Customer:</b> It’s 24 Green Street, Dorog. <span class="small">(Dorog, Green utca 24.)</span></p>
+<p><b>Bank assistant:</b> Thank you. Would you like a debit card with the account? <span class="small">(Köszönöm. Szeretne bankkártyát is a számlához?)</span></p>
+<p><b>Customer:</b> Yes, please. Can I use it to pay in shops? <span class="small">(Igen, kérek. Tudok vele üzletekben fizetni?)</span></p>
+<p><b>Bank assistant:</b> Yes. You can also use it to take out money from a cash machine. <span class="small">(Igen. Bankautomatából pénzt is vehet fel vele.)</span></p>
+<p><b>Customer:</b> Is there a monthly fee for the account? <span class="small">(Van havi díja a számlának?)</span></p>
+<p><b>Bank assistant:</b> Yes, it’s two euros a month. There is no fee for the debit card this year. <span class="small">(Igen, havonta két euró. A bankkártyának ebben az évben nincs díja.)</span></p>
+<p><b>Customer:</b> That’s fine. How long does it take to get the card? <span class="small">(Ez megfelel. Mennyi idő alatt kapom meg a kártyát?)</span></p>
+<p><b>Bank assistant:</b> It usually takes about one week. We’ll send it to your home address. <span class="small">(Általában körülbelül egy hét. Elküldjük az otthoni címére.)</span></p>
+<p><b>Customer:</b> Great. Do I need to sign anything? <span class="small">(Remek. Alá kell írnom valamit?)</span></p>
+<p><b>Bank assistant:</b> Yes. Please read and sign these forms. <span class="small">(Igen. Kérem, olvassa el és írja alá ezeket az űrlapokat.)</span></p>
+<p><b>Customer:</b> Here you are. Thank you for your help. <span class="small">(Tessék. Köszönöm a segítségét.)</span></p>
+<p><b>Bank assistant:</b> You’re welcome. Your account is ready. <span class="small">(Szívesen. A számlája elkészült.)</span></p></div>
+</section>
+<section class="section">
+<div class="section-head"><span class="num">6</span><div><h2>Useful phrases | Hasznos kifejezések</h2><div class="small">Olvasd el hangosan, majd próbáld meg emlékezetből is!</div></div></div>
+<div class="vocab">
+<div class="word"><strong>Can you help me, please?</strong><span>Tudna segíteni, kérem?</span><button onclick="say('Can you help me, please?')">🔊 Listen</button></div>
+<div class="word"><strong>Where is the nearest pharmacy?</strong><span>Hol van a legközelebbi gyógyszertár?</span><button onclick="say('Where is the nearest pharmacy?')">🔊 Listen</button></div>
+<div class="word"><strong>How much is it?</strong><span>Mennyibe kerül?</span><button onclick="say('How much is it?')">🔊 Listen</button></div>
+<div class="word"><strong>I’d like a coffee, please.</strong><span>Szeretnék egy kávét, kérem.</span><button onclick="say('I would like a coffee, please.')">🔊 Listen</button></div>
+</div></section>
+<div class="actions"><button class="primary" onclick="checkAll()">Check answers | Ellenőrzés</button><button class="secondary" onclick="toggleKey()">Show answers | Megoldókulcs</button><button class="secondary" onclick="resetAll()">Start again | Újrakezdés</button></div>
+<div class="result" id="result" aria-live="polite"><h2 id="score"></h2><p id="message"></p><div id="key" class="answerkey"><strong>Correct answers | Helyes válaszok</strong><ol><li>the pharmacy</li><li>the post office</li><li>the library</li><li>the bank</li><li>Of course. Please sit down.</li><li>It’s one euro.</li><li>Yes, of course.</li><li>library</li><li>pharmacy</li><li>bank</li><li>post office</li></ol></div></div>
+<p class="footer">Services • English practice for A1–A2 learners</p>
+</main>
+<script>
+function say(text){if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='en-GB';speechSynthesis.speak(u)}}
+function norm(s){return s.trim().toLowerCase().replace(/[’']/g,"'").replace(/\s+/g,' ')}
+function checkAll(){let total=0,score=0;document.querySelectorAll('#task1 .question,#task2 .question,#task3 .question').forEach(q=>{total++;q.classList.remove('correct','incorrect');let answer=q.dataset.answer;let chosen=q.querySelector('input:checked');let input=q.querySelector('input[type=text]');let value=chosen?chosen.value:(input?input.value:'');let ok=norm(value)===norm(answer);if(ok)score++;q.classList.add(ok?'correct':'incorrect');let fb=q.querySelector('.feedback');if(!fb){fb=document.createElement('div');fb.className='feedback';q.appendChild(fb)}fb.textContent=ok?'✓ Correct!':'✗ Try again. Correct answer: '+answer;fb.className='feedback '+(ok?'good':'bad')});document.getElementById('result').style.display='block';document.getElementById('score').textContent=`Your score: ${score} / ${total}`;document.getElementById('message').textContent=score===total?'Excellent! You got every answer right.':score>=8?'Good work! Review the answers marked in red.':'Keep practising! Read the vocabulary again and try once more.';document.getElementById('result').scrollIntoView({behavior:'smooth',block:'center'})}
+function toggleKey(){const r=document.getElementById('result');r.style.display='block';const k=document.getElementById('key');k.style.display=k.style.display==='block'?'none':'block'}
+function resetAll(){document.querySelectorAll('input').forEach(i=>{if(i.type==='radio')i.checked=false;else i.value=''});document.querySelectorAll('.question').forEach(q=>{q.classList.remove('correct','incorrect');q.querySelector('.feedback')?.remove()});document.getElementById('result').style.display='none';document.getElementById('key').style.display='none';window.scrollTo({top:0,behavior:'smooth'})}
+</script>
+</body>
+</html>
